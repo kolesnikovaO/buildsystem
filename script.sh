@@ -1,2 +1,3 @@
-c++ hello.cpp 
-./a.out
+#!/bin/bash
+cmake .
+cmake --build .
