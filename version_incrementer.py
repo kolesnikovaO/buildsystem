@@ -8,7 +8,7 @@ import re
 VMAJOR = ''
 VMINOR = ''
 VHFNUMBER = ''
-VERSION_FILE = '.\VersionStorage\vercontrol.h'
+VERSION_FILE = "..\VersionStorage\vercontrol.h"
 X_VER_STRING = ''
 VSUBMINOR = ''
 
