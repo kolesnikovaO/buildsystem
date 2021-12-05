@@ -38,3 +38,5 @@ with open(VERSION_FILE,  encoding="utf8") as FILE:
 with open (VERSION_FILE, 'w') as FILE:
     FILE.writelines(lines)
 os.environ["X_VER_STRING"] = X_VER_STRING
+print("var")
+print(os.environ["X_VER_STRING"])
