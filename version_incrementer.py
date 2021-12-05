@@ -26,9 +26,7 @@ with open(VERSION_FILE,  encoding="utf8") as FILE:
         if "VSUBMINOR" in line:
             oldline = line
             newline = re.sub(r'[0-9]+$',
-            lambda x: f"{str(int(x.group())+1).zfill(len(x.group()))}",
-            line)
-            print(newline)
+            lambda x: f"{str(int(x.group())+1).zfill(len(x.group()))}",line)
             lines = [line.replace(oldline, newline) for line in lines]
             VSUBMINOR = newline.split(' ')[-1].strip('\n')
         if "X_VER_STRING" in line:
@@ -36,8 +34,7 @@ with open(VERSION_FILE,  encoding="utf8") as FILE:
             X_VER_STRING = VMAJOR + '.' + VMINOR + '.' + VSUBMINOR  + '.' +  VHFNUMBER + '\n'
             newline = line.replace(line.split(' ')[-1], X_VER_STRING )
             lines = [line.replace(oldline, newline) for line in lines]
-
-    print(lines)
+            print("Version is ", X_VER_STRING)
 
 with open (VERSION_FILE, 'w') as FILE:
     FILE.writelines(lines)
