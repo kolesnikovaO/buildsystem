@@ -37,5 +37,5 @@ with open(VERSION_FILE,  encoding="utf8") as FILE:
 
 with open (VERSION_FILE, 'w') as FILE:
     FILE.writelines(lines)
-with open ('tempf', 'w') as FILE:
-    FILE.writelines(X_VER_STRING)
+with open ('tempf', 'w+') as FILE:
+    FILE.write(X_VER_STRING)
