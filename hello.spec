@@ -12,5 +12,5 @@ Source:         appname.tar.gz
 Test app
 
 %build
-cp -a rpmbuild/SOURCES/ello/. /rpmbuild/BUILD/
+cp -a rpmbuild/SOURCES/. /rpmbuild/BUILD/
 cmake .
