@@ -1,4 +1,4 @@
-Name:           Hello App
+Name:           HelloApp
 Version:        curversion
 Release:        0
 Summary:        Some summary
