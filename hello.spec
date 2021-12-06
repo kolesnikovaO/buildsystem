@@ -15,8 +15,5 @@ Test app
 cmake .
 cmake --build .
 
-%install
-%make_install
-
 %files
-%{_bindir}/%{name}
+%{_bindir}/hello_app
