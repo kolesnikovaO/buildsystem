@@ -18,7 +18,7 @@ cmake --build .
 %install
 [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_libdir}
-install -m755 -D %{buildinstalldir}/hello_app $RPM_BUILD_ROOT%{_libdir}/hello_app
+install -m755 -D BUILD/hello_app $RPM_BUILD_ROOT%{_libdir}/hello_app
 
 %files
 %{_libdir}/hello_app
