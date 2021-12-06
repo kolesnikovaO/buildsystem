@@ -13,3 +13,10 @@ Test app
 
 %build
 cmake .
+cmake --build .
+
+%install
+%make_install
+
+%files
+%{_bindir}/%{name}
