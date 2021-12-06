@@ -6,11 +6,11 @@ Summary:        Some summary
 
 BuildArch:      noarch
 License:        GPL
-Source:         hello.tar.gz
+Source:         appname.tar.gz
 
 %description
 Test app
 
 %build
-cp -r /home/agent/rpmbuild/SOURCES/hello/* /home/agent/rpmbuild/BUILD/
+cp -a rpmbuild/SOURCES/ello/. /rpmbuild/BUILD/
 cmake .
