@@ -16,4 +16,4 @@ cmake .
 cmake --build .
 
 %files
-%{_bindir}/hello_app
+BUILD/hello_app
