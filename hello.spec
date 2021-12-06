@@ -15,5 +15,4 @@ Test app
 cmake .
 cmake --build .
 
-%files
-/BUILD/hello_app
+
